@@ -192,3 +192,9 @@ Text Formatting Classes:
 .text-capitalize     -> indicates capitalized text
 
 ====
+
+
+Q. Bootstrap tables ? How to create ? Types of classes used for bootstrap tables ?
+====
+Ans:
+====
