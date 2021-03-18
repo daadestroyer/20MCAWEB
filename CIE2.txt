@@ -1,4 +1,4 @@
-Q.1 What is bootstrap ? Why to use ? what is advantage ? 
+Q. What is bootstrap ? Why to use ? what is advantage ? 
 ====
 Ans:1
 
@@ -45,4 +45,26 @@ Advantage / Bootstrap features
 6. Customizable
 7. Support
 8. Open source
+====
+
+
+Q. What are containers ? Type of containers ?
+====
+Ans:
+Containers:
+-----------
+Containers are basically use for default width and to wrap complete website contents we use Containers
+
+There are basically two types of container
+------------------------------------------
+1. container
+2. container-fluid
+
+container
+---------
+The .container class provides a responsive fixed width container 
+
+container-fluid
+--------------
+The .container-fluid class provides a full width container , which spread all over the web page
 ====
