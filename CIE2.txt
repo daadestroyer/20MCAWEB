@@ -4,5 +4,7 @@ Ans:1
 
 Bootstrap
 ---------
->>> Bootstrap is a collection of CSS framework
+>>> Bootstrap is a framework of CSS
+>>> Bootstrap is a collection of CSS , Javascript and Jquery
+>>> In bootstrap we get readymade code and we just need to call that CSS class in our component
 ====
