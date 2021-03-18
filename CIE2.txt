@@ -90,4 +90,41 @@ Q. What are bootstrap grids ?
 ====
 Ans:
 
+>>> Bootstrap grid system built with flexbox and allows upto 12 columns across the page
+>>> We can also group the colom together to make the wider columns
+
+diagram --> https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
+
+>>> The grid system is responsive, and the columns will re-arrange automatically depending on the screen size.
+
+Bootstrap grid system has five classes
+---------------------------------------
+.col-    => used for extra small devices , where screen width less than 576px
+.col-sm  => use for small devices - screen width equal to or greater than 576px
+.col-md- => use for medium devices - screen width equal to or greater than 768px
+.col-lg- => use for large devices - screen width equal to or greater than 992px
+.col-xl- => use for xlarge devices - screen width equal to or greater than 1200px
+
+sm means small
+md means medium
+lg means large
+xl means xtra large
+
+Basic structure of bootstrap 4 grids
+------------------------------
+Here i make 3 colum of medium size
+
+<div class="container">
+ <div class="row">
+   <div class="col-md-3"> 
+     <p>This is bootstrap grids</p>
+   </div>
+   <div class="col-md-3"> 
+     <p>This is bootstrap grids</p>
+   </div>
+   <div class="col-md-3"> 
+     <p>This is bootstrap grids</p>
+   </div>
+ </div>
+</div>
 ====
