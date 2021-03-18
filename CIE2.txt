@@ -1,4 +1,4 @@
-Q. What is bootstrap ? Why to use ? what is advantage ? 
+sQ. What is bootstrap ? Why to use ? what is advantage ? 
 ====
 Ans:1
 
@@ -298,3 +298,49 @@ A button can be set to an active (appear pressed) or a disabled (unclickable) st
 >> The class .active makes a button appear pressed
 >> The class .disabled class to make it visually appear disabled.
 ====
+
+
+=======================================================================================================================
+=======================================================================================================================
+						XML STARTED
+=======================================================================================================================
+=======================================================================================================================
+
+
+Q. What is XML how it is differ from HTML
+====
+Ans:
+
+>>> XML Stands for extensible markup language
+>>> XML is markup language just like HTML 
+>>> XML was designed to store and transport data
+>>> XML was designed to be self-descriptive
+>>> XML is a W3C Recommendation
+
+XML tags identify the data and are used to store and organize the data , where 
+====
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
