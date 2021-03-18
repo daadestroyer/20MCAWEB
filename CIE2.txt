@@ -2,7 +2,7 @@ Q.1 What is bootstrap ? Why to use ? what is advantage ?
 ====
 Ans:1
 
-Bootstrap
+Bootstrap / Why to use it
 ---------
 >>> Bootstrap is a framework of CSS
 >>> Bootstrap is a collection of CSS , Javascript and Jquery
