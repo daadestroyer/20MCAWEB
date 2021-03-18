@@ -25,4 +25,24 @@ width="device-width = this part set page according to screen size
 initial-scale=1 = it set the initial zoom level
 
 after that we have to apply CDN links in the head of the html page
+
+CDN LINK
+---------
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+
+Advantage / Bootstrap features
+---------------------
+1. Resposive
+2. easy to use
+3. portable
+4. enrich in features
+5. Speedy Development
+6. Customizable
+7. Support
+8. Open source
 ====
