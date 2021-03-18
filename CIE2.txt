@@ -1,367 +1,164 @@
-sQ. What is bootstrap ? Why to use ? what is advantage ? 
-====
-Ans:1
-
-Bootstrap / Why to use it
----------
->>> Bootstrap is a framework of CSS
->>> Bootstrap is a collection of CSS , Javascript and Jquery
->>> In bootstrap we get readymade code and we just need to call that CSS class in our component
->>> Bootstrap is a open source framework and easy to use
->>> Bootstrap help us to make resposive websites which is user friendly in all types of devices
->>> Using bootstrap make our work easy and simple
->>> Bootstrap framwork initially devloped by team of Twitter web developers and after that it was release open source 
-    project on github
->>> Responsives websties automatically adjust according to device width 
->>> Till now 3 version of bootstrap are there
-
-How to use bootstrap
--------------------
-To use bootstrap we have to apply some usefull links in head of the html page
-
-<meta name="viewport" content="width="device-width" initial-scale=1 "/>
-
-width="device-width = this part set page according to screen size
-initial-scale=1 = it set the initial zoom level
-
-after that we have to apply CDN links in the head of the html page
-
-CDN LINK
----------
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
-
-
-Advantage / Bootstrap features
----------------------
-1. Resposive
-2. easy to use
-3. portable
-4. enrich in features
-5. Speedy Development
-6. Customizable
-7. Support
-8. Open source
-====
-
-
-Q. What are containers ? Type of containers ?
-====
-Ans:
-Containers:
------------
-Containers are basically use for default width and to wrap complete website contents we use Containers
-
-There are basically two types of container
-------------------------------------------
-1. container
-2. container-fluid
-
-container
----------
-The .container class provides a responsive fixed width container
-
-Example:
-
-<div class="container">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
-</div> 
-
-container-fluid
---------------
-The .container-fluid class provides a full width container , which spread all over the web page
-here widhth of the container is always 100%
-
-Example:
-
-<div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
-</div>
-====
-
-diagram of container(open link) --> https://www.w3schools.com/bootstrap4/bootstrap_containers.asp
-
-Q. What are bootstrap grids ?
-====
-Ans:
-
->>> Bootstrap grid system built with flexbox and allows upto 12 columns across the page
->>> We can also group the colom together to make the wider columns
-
-diagram --> https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
-
->>> The grid system is responsive, and the columns will re-arrange automatically depending on the screen size.
-
-Bootstrap grid system has five classes
----------------------------------------
-.col-    => used for extra small devices , where screen width less than 576px
-.col-sm  => use for small devices - screen width equal to or greater than 576px
-.col-md- => use for medium devices - screen width equal to or greater than 768px
-.col-lg- => use for large devices - screen width equal to or greater than 992px
-.col-xl- => use for xlarge devices - screen width equal to or greater than 1200px
-
-sm means small
-md means medium
-lg means large
-xl means xtra large
-
-Basic structure of bootstrap 4 grids
-------------------------------
-Here i make 3 colum of medium size of 4
-
-<div class="container">
- <div class="row">
-   <div class="col-md-4"> 
-     <p>This is bootstrap grids</p>
-   </div>
-   <div class="col-md-4"> 
-     <p>This is bootstrap grids</p>
-   </div>
-   <div class="col-md-4"> 
-     <p>This is bootstrap grids</p>
-   </div>
- </div>
-</div>
-
-Three Equal Columns
--------------------
-Diagram : https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
-
-<div class="container">
- <div class="row">
-   <div class="col-md-4"> 
-     <p>This is bootstrap grids</p>
-   </div>
-   <div class="col-md-4"> 
-     <p>This is bootstrap grids</p>
-   </div>
-   <div class="col-md-4"> 
-     <p>This is bootstrap grids</p>
-   </div>
- </div>
-</div>
-
-
-Two Unequal Columns
--------------------
-Diagram : https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
-
-<div class="container">
- <div class="row">
-   <div class="col-md-4"> 
-     <p>This is bootstrap grids</p>
-   </div>
-   <div class="col-md-8"> 
-     <p>This is bootstrap grids</p>
-   </div>
- </div>
-</div>
-====
-
-Q. List out some bootstrap text-color and text-formatting classes ?
-====
-Ans:
-
-Text Colors Classes:
------------
-.text-muted     -> no color (default) 
-.text-primary   -> Violet color 
-.text-success   -> green color 
-.text-info      -> light blue
-.text-warning   -> yellow color
-.text-danger    -> red color 
-
-Text Formatting Classes:
------------------------
-.font-weight-bold    ->  Bold text
-.font-weight-bolder  ->	Bolder text
-.font-italic	     -> Italic text
-.font-weight-light   ->	Light weight text	
-.font-weight-lighter ->	Lighter weight text	
-.font-weight-normal  ->	Normal text
-.text-left	     -> indicates left-aligned text
-.text-center	     -> indicates center-aligned text
-.text-right	     -> indicates right-aligned text
-.text-lowercase	     -> indicates lowercased text	
-.text-uppercase      -> indicates uppercased text	
-.text-capitalize     -> indicates capitalized text
-
-====
-
-
-Q. Bootstrap tables ? How to create ? Types of classes used for bootstrap tables ?
-====
-Ans:
->>> Bootstrap provide lots of functionality to make tables 
->>> .table class is there to create bootstrap tables
-
-Basic bootstrap table structure
--------------------------------
-<div class="container">
- <table class="table">
-  <thead>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Email</th>
-    </tr>
-  </thead>
-  <tbody>
-   <tr>
-    <th>Shubham</th>
-    <th>Nigam</th>
-    <th>nigamshubham@gmail.com</th>
-   </tr>
-   <tr>
-    <th>Pranjali</th>
-    <th>Prajwal</th>
-    <th>prajwalpranjali@gmail.com</th>
-   </tr>
-   <tr>
-    <th>Mangla</th>
-    <th>Devi</th>
-    <th>devimangla@gmail.com</th>
-   </tr>
-  </tbody>
- </table>
-</div>
-
-The .table-hover class adds a hover effect (grey background color) on table rows
-The .table-dark class adds a black background to the table
-.table-striped to create a dark, striped table
-The .table-borderless class removes borders from the table
-
-.table-primary	Blue color background of table
-.table-success	Green color background of table
-.table-danger	Red color background of table
-.table-info	Light blue color background of table
-.table-warning	Yellow color background of table
-
-The .table-sm -> use to create small table
-The .table-md -> use to create medium table
-The .table-lg -> use to create large table
-
-The .table-responsive class use to create responsive table which adds a scrollbar to the bottom of the table
-====
-
-Q. Explain bootstrap button with classes ?
-====
-Ans:
-Bootstrap provide several types of buttons 
-
-.btn-default -> Gives default color of button
-<button type="button" class="btn">Basic</button>
-
-.btn-primary -> Gives blue color of button
-<button type="button" class="btn btn-primary">Primary</button>
-
-.btn-success -> Gives green color of button
-<button type="button" class="btn btn-success">Success</button>
-
-.btn-info    -> Gives light blue color of button
-<button type="button" class="btn btn-info">Info</button>
-
-.btn-warning -> Gives yellow color of button
-<button type="button" class="btn btn-yellow">Warning</button>
-
-.btn-danger  -> Gives red color of button
-<button type="button" class="btn btn-danger">Danger</button>
-
-.btn-link    -> Gives link to button color of button
-<button type="button" class="btn btn-link">Link</button>
-
-The button classes can be used on the following elements:
-1. <a> 
-2. <button>
-3. <input>
-
-
-Button sizes
-------------
-Use the .btn-lg class for large buttons or .btn-sm class for small buttons
-
-<button type="button" class="btn btn-primary btn-lg">Large</button>
-<button type="button" class="btn btn-primary">Default</button>
-<button type="button" class="btn btn-primary btn-sm">Small</button>
-
-Add class .btn-block to create a block level button that spans the entire width of the parent element.
-
-Active/Disabled Buttons
------------------------
-A button can be set to an active (appear pressed) or a disabled (unclickable) state
-
->> The class .active makes a button appear pressed
->> The class .disabled class to make it visually appear disabled.
-====
-
-
-=======================================================================================================================
-=======================================================================================================================
-						XML STARTED
-=======================================================================================================================
-=======================================================================================================================
-
-
-Q. What is XML ? Usage ? how it is differ from HTML
-====
-Ans:
-
+What is XML ?
+-------------
 >>> XML Stands for extensible markup language
 >>> XML is markup language just like HTML 
 >>> XML was designed to store and transport data
 >>> XML was designed to be self-descriptive
 >>> XML is a W3C Recommendation
 
-XML tags identify the data and are used to store and organize the data , where html used to display the data
 
-There are three important characteristics of XML that make it useful in a variety of systems and solutions
-
-1. XML is extensible
---------------------
-XML allows you to create your own tags , that suits your application
-
-2. XML carries data , does not present present it 
---------------------------------------------------
-XML allows you to store the data to travel it from one page to another page , and not to display it like html
-
-3. XML is a public standard
-----------------------------
-XML was developed by an organization called W3C (World Wide Consortium) and is available as an open standard 
-
-
-Usage of XML
-------------
-
- 
-
-====
+<note>
+    <To>Mangla</To>
+    <from>Pranjali</from>
+    <heading>Remainder</heading>
+    <body>Don't forget me this weekend</body>
+</note>
 
 
 
+The XML above is quite self-descriptive:
+----------------------------------------
+>>> It has sender information.
+>>> It has receiver information
+>>> It has a heading
+>>> It has a message body.
+
+The difference b/w XML and HTML
+-------------------------------
+XML and HTML were defined with different goals
+
+>>> XML was designed to carry data - with focus 
+    HTML was designed to display the data
+
+>>> XML doesn't have any predefined tags
+>>> HTML use prefined tags
+
+
+XML Does Not Use Predefined Tags
+--------------------------------
+>>> The XML language has no predefined tags
+>>> The tags in the example above (like <to> and <from>) are not defined in any XML standard. 
+    These tags are "invented" by the author of the XML document.
+>>> HTML works with predefined tags like <p>, <h1>, <table>, etc.
+>>> With XML, the author must define both the tags and the document structure.  
+
+
+XML is Extensible
+-----------------
+>>> Most XML applications will work as expected even if new data is added (or removed).
+>>> Imagine an application designed to display the original version of note.xml (<to> <from> <heading> <body>).
+>>> Then imagine a newer version of note.xml with added <date> and <hour> elements, and a removed <heading>.
+>>> The way XML is constructed, older version of the application can still work
 
 
 
+Why Study XML
+-------------
+>>> XML plays an important role in many different IT systems
+>>> XML is often used for distributing data over the Internet.
+>>> It is important (for all types of software developers!) to have a good understanding of XML.
+
+
+XML Tree Structure
+------------------
+>>> XML documents are formed as element trees.
+>>> An XML tree starts at a root element and branches from the root to child elements.
+>>> All elements can have sub elements (child elements):
+
+<root>
+  <child>
+    <subchild>.....</subchild>
+  </child>
+</root>
 
 
 
+XML Syntax Rules
+----------------
+>>> XML Documents Must Have a Root Element
+
+<root>
+  <child>
+    <subchild>.....</subchild>
+  </child>
+</root>
+
+
+>>> XML Tags are Case Sensitive
+>>> XML Elements Must be Properly Nested
+    <b><i>This text is bold and italic</b></i>
+>>> XML Attribute Values Must Always be Quoted
+
+<note date="12/11/2007">
+  <to>Tove</to
+  <from>Jani</from>
+</note>
+
+What is an XML Element?
+-----------------------
+>>> An XML element is everything from (including) the element's start tag to (including) the element's end tag.
+    <price>29.99</price>
+
+An element can contain:
+--> text
+--> attributes
+--> other elements
+--> or a mix of the above 
+
+<bookstore>
+  <book category="children">
+    <title>Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+  <book category="web">
+    <title>Learning XML</title>
+    <author>Erik T. Ray</author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+</bookstore>
+
+<title>, <author>, <year>, and <price> have text content because they contain text (like 29.99).
+<bookstore> and <book> have element contents, because they contain elements.
+<book> has an attribute (category="children").
+
+Empty XML Elements
+------------------
+--> An element with no content is said to be empty.
+--> In XML, you can indicate an empty element like this:
+<element></element>
 
 
 
+XML Naming Rules    
+----------------
+XML elements must follow these naming rules:
+--------------------------------------------
+>>> Element names are case-sensitive
+>>> Element names must start with a letter or underscore
+>>> Element names cannot start with the letters xml (or XML, or Xml, etc)
+>>> Element names can contain letters, digits, hyphens, underscores, and periods
+>>> Element names cannot contain spaces
+>>> Any name can be used, no words are reserved (except xml)
+
+XML Attributes
+--------------
+>>> XML elements can have attributes, just like HTML
+>>> Attributes are designed to contain data related to a specific element.
+
+XML Attributes Must be Quoted
+-----------------------------
+<person gender="female">
 
 
+XML Elements vs. Attributes
+---------------------------
+<person gender="female">
+  <firstname>Anna</firstname>
+  <lastname>Smith</lastname>
+</person>
 
-
-
-
-
-
-
-
-
-
-
+>> gender is attribute
+>> firstname is element
