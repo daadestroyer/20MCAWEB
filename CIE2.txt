@@ -307,7 +307,7 @@ A button can be set to an active (appear pressed) or a disabled (unclickable) st
 =======================================================================================================================
 
 
-Q. What is XML how it is differ from HTML
+Q. What is XML ? Usage ? how it is differ from HTML
 ====
 Ans:
 
@@ -317,7 +317,28 @@ Ans:
 >>> XML was designed to be self-descriptive
 >>> XML is a W3C Recommendation
 
-XML tags identify the data and are used to store and organize the data , where 
+XML tags identify the data and are used to store and organize the data , where html used to display the data
+
+There are three important characteristics of XML that make it useful in a variety of systems and solutions
+
+1. XML is extensible
+--------------------
+XML allows you to create your own tags , that suits your application
+
+2. XML carries data , does not present present it 
+--------------------------------------------------
+XML allows you to store the data to travel it from one page to another page , and not to display it like html
+
+3. XML is a public standard
+----------------------------
+XML was developed by an organization called W3C (World Wide Consortium) and is available as an open standard 
+
+
+Usage of XML
+------------
+
+ 
+
 ====
 
 
