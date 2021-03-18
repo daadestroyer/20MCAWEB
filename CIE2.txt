@@ -12,4 +12,17 @@ Bootstrap
 >>> Using bootstrap make our work easy and simple
 >>> Bootstrap framwork initially devloped by team of Twitter web developers and after that it was release open source 
     project on github
+>>> Responsives websties automatically adjust according to device width 
+>>> Till now 3 version of bootstrap are there
+
+How to use bootstrap
+-------------------
+To use bootstrap we have to apply some usefull links in head of the html page
+
+<meta name="viewport" content="width="device-width" initial-scale=1 "/>
+
+width="device-width = this part set page according to screen size
+initial-scale=1 = it set the initial zoom level
+
+after that we have to apply CDN links in the head of the html page
 ====
