@@ -145,4 +145,34 @@ Diagram : https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
    </div>
  </div>
 </div>
+
+
+Two Unequal Columns
+-------------------
+Diagram : https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
+
+<div class="container">
+ <div class="row">
+   <div class="col-md-4"> 
+     <p>This is bootstrap grids</p>
+   </div>
+   <div class="col-md-8"> 
+     <p>This is bootstrap grids</p>
+   </div>
+ </div>
+</div>
+====
+
+Q. List out some bootstrap text-color and text-formatting classes ?
+====
+Ans:
+
+Text Colors:
+-----------
+.text-muted     -> no color (default) 
+.text-primary   -> Violet color 
+.text-success   -> green color 
+.text-info      -> light blue
+.text-warning   -> yellow color
+.text-danger    -> red color 
 ====
