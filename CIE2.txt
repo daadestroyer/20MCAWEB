@@ -1,0 +1,8 @@
+Q.1 What is bootstrap ? Why to use ? what is advantage ? 
+====
+Ans:1
+
+Bootstrap
+---------
+>>> Bootstrap is a collection of CSS framework
+====
