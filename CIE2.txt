@@ -247,6 +247,54 @@ The .table-md -> use to create medium table
 The .table-lg -> use to create large table
 
 The .table-responsive class use to create responsive table which adds a scrollbar to the bottom of the table
+====
+
+Q. Explain bootstrap button with classes ?
+====
+Ans:
+Bootstrap provide several types of buttons 
+
+.btn-default -> Gives default color of button
+<button type="button" class="btn">Basic</button>
+
+.btn-primary -> Gives blue color of button
+<button type="button" class="btn btn-primary">Primary</button>
+
+.btn-success -> Gives green color of button
+<button type="button" class="btn btn-success">Success</button>
+
+.btn-info    -> Gives light blue color of button
+<button type="button" class="btn btn-info">Info</button>
+
+.btn-warning -> Gives yellow color of button
+<button type="button" class="btn btn-yellow">Warning</button>
+
+.btn-danger  -> Gives red color of button
+<button type="button" class="btn btn-danger">Danger</button>
+
+.btn-link    -> Gives link to button color of button
+<button type="button" class="btn btn-link">Link</button>
+
+The button classes can be used on the following elements:
+1. <a> 
+2. <button>
+3. <input>
 
 
+Button sizes
+------------
+Use the .btn-lg class for large buttons or .btn-sm class for small buttons
+
+<button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-primary">Default</button>
+<button type="button" class="btn btn-primary btn-sm">Small</button>
+
+Add class .btn-block to create a block level button that spans the entire width of the parent element.
+
+Active/Disabled Buttons
+-----------------------
+A button can be set to an active (appear pressed) or a disabled (unclickable) state
+
+>> The class .active makes a button appear pressed
+>> The class .disabled class to make it visually appear disabled.
 ====
