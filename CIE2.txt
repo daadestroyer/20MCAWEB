@@ -217,7 +217,16 @@ Basic bootstrap table structure
     <th>Nigam</th>
     <th>nigamshubham@gmail.com</th>
    </tr>
-   
+   <tr>
+    <th>Pranjali</th>
+    <th>Prajwal</th>
+    <th>prajwalpranjali@gmail.com</th>
+   </tr>
+   <tr>
+    <th>Mangla</th>
+    <th>Devi</th>
+    <th>devimangla@gmail.com</th>
+   </tr>
   </tbody>
  </table>
 </div>
