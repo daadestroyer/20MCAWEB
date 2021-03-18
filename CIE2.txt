@@ -62,9 +62,32 @@ There are basically two types of container
 
 container
 ---------
-The .container class provides a responsive fixed width container 
+The .container class provides a responsive fixed width container
+
+Example:
+
+<div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p>
+</div> 
 
 container-fluid
 --------------
 The .container-fluid class provides a full width container , which spread all over the web page
+here widhth of the container is always 100%
+
+Example:
+
+<div class="container-fluid">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p>
+</div>
+====
+
+diagram of container(open link) --> https://www.w3schools.com/bootstrap4/bootstrap_containers.asp
+
+Q. What are bootstrap grids ?
+====
+Ans:
+
 ====
