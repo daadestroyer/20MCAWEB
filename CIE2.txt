@@ -112,17 +112,35 @@ xl means xtra large
 
 Basic structure of bootstrap 4 grids
 ------------------------------
-Here i make 3 colum of medium size
+Here i make 3 colum of medium size of 4
 
 <div class="container">
  <div class="row">
-   <div class="col-md-3"> 
+   <div class="col-md-4"> 
      <p>This is bootstrap grids</p>
    </div>
-   <div class="col-md-3"> 
+   <div class="col-md-4"> 
      <p>This is bootstrap grids</p>
    </div>
-   <div class="col-md-3"> 
+   <div class="col-md-4"> 
+     <p>This is bootstrap grids</p>
+   </div>
+ </div>
+</div>
+
+Three Equal Columns
+-------------------
+Diagram : https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
+
+<div class="container">
+ <div class="row">
+   <div class="col-md-4"> 
+     <p>This is bootstrap grids</p>
+   </div>
+   <div class="col-md-4"> 
+     <p>This is bootstrap grids</p>
+   </div>
+   <div class="col-md-4"> 
      <p>This is bootstrap grids</p>
    </div>
  </div>
