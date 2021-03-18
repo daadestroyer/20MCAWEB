@@ -230,4 +230,23 @@ Basic bootstrap table structure
   </tbody>
  </table>
 </div>
+
+The .table-hover class adds a hover effect (grey background color) on table rows
+The .table-dark class adds a black background to the table
+.table-striped to create a dark, striped table
+The .table-borderless class removes borders from the table
+
+.table-primary	Blue color background of table
+.table-success	Green color background of table
+.table-danger	Red color background of table
+.table-info	Light blue color background of table
+.table-warning	Yellow color background of table
+
+The .table-sm -> use to create small table
+The .table-md -> use to create medium table
+The .table-lg -> use to create large table
+
+The .table-responsive class use to create responsive table which adds a scrollbar to the bottom of the table
+
+
 ====
