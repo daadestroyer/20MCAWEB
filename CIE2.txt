@@ -167,7 +167,7 @@ Q. List out some bootstrap text-color and text-formatting classes ?
 ====
 Ans:
 
-Text Colors:
+Text Colors Classes:
 -----------
 .text-muted     -> no color (default) 
 .text-primary   -> Violet color 
@@ -175,4 +175,20 @@ Text Colors:
 .text-info      -> light blue
 .text-warning   -> yellow color
 .text-danger    -> red color 
+
+Text Formatting Classes:
+-----------------------
+.font-weight-bold    ->  Bold text
+.font-weight-bolder  ->	Bolder text
+.font-italic	     -> Italic text
+.font-weight-light   ->	Light weight text	
+.font-weight-lighter ->	Lighter weight text	
+.font-weight-normal  ->	Normal text
+.text-left	     -> indicates left-aligned text
+.text-center	     -> indicates center-aligned text
+.text-right	     -> indicates right-aligned text
+.text-lowercase	     -> indicates lowercased text	
+.text-uppercase      -> indicates uppercased text	
+.text-capitalize     -> indicates capitalized text
+
 ====
