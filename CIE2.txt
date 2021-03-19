@@ -517,28 +517,157 @@ XML validator
 Q. What is DTD ? Types of DTD ? Difference b/w DTD and Schema ?
 ====
 Ans:
+>>> XML DTD called as Document Type Definition
+>>> The purpose of a DTD is to define the structure of an XML document. It defines the structure with a list of     
+    legal elements.
+>>> An XML document with correct syntax is called "Well Formed"
+====
 
+<!DOCTYPE book [
+<!ELEMENT book (title,author,price)> 
+<!ELEMENT title (#PCDATA)> 
+<!ELEMENT author (#PCDATA)> 
+<!ELEMENT price (#PCDATA)> ]>
+
+The DTD above is interpreted like this:
+
+        ◦ !DOCTYPE book defines that the root element of the document is book
+        ◦ !ELEMENT book defines that the book element must contain the elements:
+          "title, author, price”
+        ◦ !ELEMENT title defines the title element to be of type "#PCDATA"
+        ◦ !ELEMENT author defines the author element to be of type "#PCDATA"
+        ◦ !ELEMENT price defines the price element to be of type "#PCDATA"
+
+Note: PCDATA: Parse able Character Data, CDATA: Character Data.
+
+Two types of DTD's
+------------------
+1) Internal DTD.
+----------------
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Student[
+<!ELEMENT student (id,name,age,addr,email,phn)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT addr (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phn (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>]
+
+<student>
+  <id>101</td>
+  <name>Shubham</name>
+  <age>21</age>
+  <addr>benagluru</addr>
+  <email>nigamshubham@gmail.com</email>
+  <ph>1111111111</ph>
+  <gender>male</gender>
+</student>
+
+2) External DTD.
+---------------
+<!ELEMENT student (id,name,age,addr,email)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT addr (#PCDATA)>
+<!ELEMENT email (#PCDATA)>]
+
+
+save above code as student.dtd
+
+and prepare student.xml
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<student>
+  <id>101</id>
+  <name>Shubham</name>
+  <age>21</age>
+  <addr>benagluru</addr>
+  <email>nigamshubham@gmail.com</email>
+  <ph>1111111111</ph>
+  <gender>male</gender>
+</student>
+
+
+
+XML DTD vs XML Schema
+---------------------
+1. XML DTD is use to verify its own data
+   Schema is use to validate the structure
+   
+ 2. In XML you can't define type of the element
+    In Schema you can define type of the element also
+    
+    
+   
+<?xml version="1.0" encoding="UTF-8" ?>
+<student>
+  <id>101</id>
+  <name>Shubham</name>
+  <age>21</age>
+  <addr>benagluru</addr>
+  <email>nigamshubham@gmail.com</email>
+  <ph>1111111111</ph>
+  <gender>male</gender>
+</student>
+
+The above schema is interpreted like this
+    • <xs:element name="book"> defines the element called "book" is a root.
+    • <xs:complexType> the "book" element is a complex type i.e. root
+    • <xs:sequence> the complex type is a sequence of elements i.e. childrens
+    • <xs:element name="title" type="xs:string"> the element "title" is of type string (text)
+    • <xs:element name="author" type="xs:string"> the element "author" is of type string
+    • <xs:element name="price" type="xs:integer"> the element "price" is of type integer.
+    • <xs:element name="edition" type="xs:string"> the element "edition" is of type string
 ====
 
 
+Q. What is XSLT ? Explain with example ? What is the use
+====
+Ans:
+>>> XSLT is called as extensible stylesheet	
+>>> For styling html components , simliarly to style XML componen we use XSLT
+>>> XSLT is the most important part of XSL
+>>> XSLT transforms an XML document into another XML document
 
 
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="book.xsl" ?>
+<book-store>
+  <book>
+    <title>JAVA</title>
+    <author>James Gosling</author>
+  </book>
+  <book>
+    <title>C++</title>
+    <author>Dennis Rittchie</author>
+  </book>
+</book-store>
 
+save this code as book.xml
 
+<?xml version="1.0" encoding="UTF-8"?> 
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template-match>
+  <html>
+      <h2>Book Details</h2>
+      <table border="1">
+	<tr>
+	  <th>Title</th>
+	  <th>Author</th>
+	</tr>
+	<xsl:for-each select="book_store/book">
+	<tr>
+	  <td><xsl:value-of select="title"/></td>
+	  <td><xsl:value-of select="author"/></td>
+	</tr>
+        </xsl:for-each>
+  </html>
+</xsl:template-match>
+</xsl:stylesheet>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Save the above file as “book.xsl”
+====
