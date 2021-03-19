@@ -424,9 +424,9 @@ XML documents form a tree structure that starts at "the root" and branches to "t
 
 Diagram : https://www.w3schools.com/xml/xml_tree.asp
 
-Basic  XML docu,emt
+Basic  XML docuemt
 -------------------
-<?xml version="?" enocind examlple?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 
 <bookstore>
@@ -451,10 +451,75 @@ XML Namespaces
 ---------------
 In XML, element names are defined by the developer. This often results in a conflict when trying to mix XML documents from different XML applications.
 
+This XML carries HTML table information:
+
+<table>
+   <tr>
+       <td>Apples</td>
+       <td>Bananas</td>
+   </tr>
+</table>
+
+<table>
+    <name>African Coffee Table</name>
+    <width>80</width>
+    <length>120</length>
+</table>
+
+If these XML fragments were added together, there would be a name conflict. Both contain a <table> element, but the elements have different content and meaning.
+
+
+Solving the Name Conflict Using a Prefix:
+-----------------------------------------
+Name conflicts in XML can easily be avoided using a name prefix.
+
+<h:table>
+   <h:tr>
+       <h:td>Apples</h:td>
+       <h:td>Bananas</h:td>
+   </h:tr>
+</h:table>
+
+<f:table>
+     <f:name>African Coffee Table</f:name>
+     <f:width>80</f:width>
+     <f:length>120</f:length>
+</f:table>
+
+XML Namespaces - The xmlns Attribute
+-----------------------------------
+>>> When using prefixes in XML, a namespace for the prefix must be defined.
+>>> The namespace can be defined by an xmlns attribute in the start tag of an element. 
+>>> The namespace declaration has the following syntax. xmlns:prefix="URI".
+
+
+<?xml version="1.0" encoding = "UTF-8" ?>
+
+<root>
+  <h:table xmlns:h = "http://www.w3.org/html5/">
+     <h:tr>
+       <h:td>Apple</h:td>
+       <h:td>Banana</h:td>
+     </h:tr>
+     <f:tr xmlns:f = "http://www.w3.org/html5/>
+       <f:width>Apple</f:width>
+       <f:length>Banana</f:length>
+     </h:tr>
+  </h:table>
+</root>
+
 xmlns attribute
 XML validator
 </book>	
 ====
+
+
+Q. What is DTD ? Types of DTD ? Difference b/w DTD and Schema ?
+====
+Ans:
+
+====
+
 
 
 
