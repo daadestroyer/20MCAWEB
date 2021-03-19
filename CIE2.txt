@@ -521,7 +521,19 @@ Ans:
 >>> The purpose of a DTD is to define the structure of an XML document. It defines the structure with a list of     
     legal elements.
 >>> An XML document with correct syntax is called "Well Formed"
-====
+>>> These rules specify a set of elements, along with how and where they can appear in a document
+
+4 keywords in DTD
+-----------------
+1. ELEMENT
+2. ATTLIST
+3. ENTITY
+4. NOTATION
+
+1. ELEMENT
+----------
+<!ELEMENT ele_name(att1,att2,att3,att4)>
+<!ELEMENT book(title,author,price)>
 
 <!DOCTYPE book [
 <!ELEMENT book (title,author,price)> 
@@ -539,6 +551,24 @@ The DTD above is interpreted like this:
         ◦ !ELEMENT price defines the price element to be of type "#PCDATA"
 
 Note: PCDATA: Parse able Character Data, CDATA: Character Data.
+
+2. ATTLIST
+----------
+<!ATTLIST ele_name,att_name,ele_type, [default] >
+
+
+default values are 
+------------------
+1. #FIXED [every element has this value]
+2. #REQUIRED [every element must needed this value]
+3. #IMPLIED [no default value and need not to specify]
+
+<!ATTLIST car doors CDATA "4">
+<!ATTLIST car enginee CDATA "#REQUIRED">
+<!ATTLIST car price CDATA "#IMPLIED">
+<!ATTLIST car model CDATA "#Ford">
+
+
 
 Two types of DTD's
 ------------------
@@ -598,11 +628,16 @@ XML DTD vs XML Schema
 1. XML DTD is use to verify its own data
    Schema is use to validate the structure
    
- 2. In XML you can't define type of the element
-    In Schema you can define type of the element also
+2. In XML you can't define type of the element
+   In Schema you can define type of the element also
     
-    
-   
+
+SCHEMA
+------
+>>> Specify the structure of its instance XML documents
+>>> Specify the data type of every element and attribute of its instance XML documents
+
+
 <?xml version="1.0" encoding="UTF-8" ?>
 <student>
   <id>101</id>
