@@ -444,11 +444,13 @@ Basic  XML docu,emt
 		<price>29.99</price>
 	</book>
 
-standard
-
-
+title is --> elements
+cooking is --> attribute
 
 XML Namespaces
+---------------
+In XML, element names are defined by the developer. This often results in a conflict when trying to mix XML documents from different XML applications.
+
 xmlns attribute
 XML validator
 </book>	
