@@ -15,36 +15,40 @@
     
 	<body>
 
-		<h1 class="text-center">Simple Login Page</h1>
-
 		<div class="container">
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <div class="container">
-                        <form> 
-                            <div class="form-group">
-                                <label for="Username">Username</label>
-                            <input type="text" name="userid" id="userid"/>
-                            </div>
-                             
-                            <div class="form-group">
-                                <label for="Password">Password</label>
-                                <input type="password" name="pswrd"/>
-                            </div>
-                            
-                            <div class="form-group">
-                                <input type="button" onclick="check(this.form)" value="Login"/>
-                            <input type="reset" value="Reset"/>
-                            </div>
-                            
-                       </form>
-                       
-                    </div>
-                </div>
-                <div class="col-md-3"></div>
-            </div>
-        </div>
+      <div class="jumbotron mt-5 ">
+        <h1 class="text-center">RVCE Admin Login Page</h1>
+  
+      <div class="container mt-5">
+              <div class="row">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6">
+                      <div class="container">
+                          <form> 
+                              <div class="form-group">
+                                  <label for="Username">Username:</label>
+                              <input  class="form-control" type="text" name="userid" id="userid"/>
+                              </div>
+                               
+                              <div class="form-group">
+                                  <label for="Password">Password:</label>
+                                  <input class="form-control" type="password" name="pswrd"/>
+                              </div>
+                              
+                              <div class="form-group">
+                                <button type="button" class="btn btn-primary" onclick="check(this.form)">LOGIN</button>
+                                <button type="reset" class="btn btn-danger">RESET</button>
+                              </div>
+                              
+                         </form>
+                         
+                      </div>
+                  </div>
+                  <div class="col-md-3"></div>
+              </div>
+          </div>
+      </div>
+    </div>
 
         
 	 <script language="javascript">
