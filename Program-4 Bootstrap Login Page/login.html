@@ -1,92 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<html>
+	<head>
+ 		 <title>Login page</title>
+            <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
     <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <style></style>
-    <title>Login Page</title>
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+	</head>
     
-  </head>
-  <body>
-    <script>
-      function check(form){
-        /*
-      var uname_pattern = /^[1A-ZA-Z0-90-9A-ZA-ZA-Z-0-9]{10}$/;  
- 		  var upwd_pattern = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-      */
-      var uname_pattern = /^[A-Za-z0-9]{10,15}$/;
-      var upwd_pattern = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
- 
-      function check(form) {
-        var userid = form.userid.value;
-        var pwd = form.pswrd.value;
-        if (!userid.test(userid) || !pwd.test(pwd)) {
-          alert("Incorrect User id/ pwd");  
-        } else {
-          alert("Welcome to RVCE");
-          document.write(Date() + "   " + "Welcome" + userid);
-          document.body.bgColor = "blue";
-        }
-      }
-      }
-    </script>
-    <div class="container mt-5">
-      <div class="jumbotron mt-5">
-        <h1 class="text-center">RVCE Admin Login</h1>
-        <div class="row mt-5">
-          <div class="col-md-3"></div>
+	<body>
 
-          <!--md-6 open-->
-          <div class="col-md-6">
-            <form>
-              <div class="form-group">
-                <label>User Id</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="userid"
-                  placeholder="Enter User Id"
-                />
-              </div>
+		<h1 class="text-center">Simple Login Page</h1>
 
-              <div class="form-group">
-                <label>Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  name="pswrd"
-                  placeholder="Enter Password"
-                />
-              </div>
-              <div class="container mt-5 text-center">
-                <button
-                  type="submit"
-                  class="btn btn-primary btn-block p-1"
-                  oonclick="check(this.form)"
-                >
-                  LOGIN
-                </button>
-                <button type="reset" class="btn btn-danger btn-block p-1">
-                  RESET
-                </button>
-              </div>
-            </form>
-          </div>
-          <!--md-6 open-->
-
-          <div class="col-md-3"></div>
+		<div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="container">
+                        <form> 
+                            <div class="form-group">
+                                <label for="Username">Username</label>
+                            <input type="text" name="userid" id="userid"/>
+                            </div>
+                             
+                            <div class="form-group">
+                                <label for="Password">Password</label>
+                                <input type="password" name="pswrd"/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="button" onclick="check(this.form)" value="Login"/>
+                            <input type="reset" value="Reset"/>
+                            </div>
+                            
+                       </form>
+                       
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
         </div>
-      </div>
-    </div>
 
-   
-  </body>
+        
+	 <script language="javascript">
+		var ck_username = /^[A-Za-z0-9]{10,15}$/;
+		
+ 		var ck_pwd = /^[A-Za-z0-9]{10,15}$/;
+    
+
+ 		function check(form)
+ 			{
+				 var userid = form.userid.value;
+				 var pwd=form.pswrd.value;
+                 var res = (ck_username.test(userid) || ck_pwd.test(pwd))
+                  
+				 if (ck_username.test(userid) || ck_pwd.test(pwd)) 
+					{
+                        alert("Welcome to RVCE");
+					document.write("<h1>"+Date()+"</h1><br><br>" +"<h1>Welcome "+"<b style='color:red;'>"+userid+"</b></h1>");
+					document.body.bgColor="aqua";
+						
+ 					}
+ 				
+   				else
+  					{
+    					alert("Incorrect User id/ pwd");	
+						
+    					}
+  			 }
+			
+		
+   	</script>
+   	</body>
 </html>
