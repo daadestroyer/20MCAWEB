@@ -13,28 +13,31 @@
     />
     <style></style>
     <title>Login Page</title>
+    
+  </head>
+  <body>
     <script>
-      /*
+      function check(form){
+        /*
       var uname_pattern = /^[1A-ZA-Z0-90-9A-ZA-ZA-Z-0-9]{10}$/;  
  		  var upwd_pattern = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
       */
       var uname_pattern = /^[A-Za-z0-9]{10,15}$/;
       var upwd_pattern = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-
+ 
       function check(form) {
         var userid = form.userid.value;
         var pwd = form.pswrd.value;
-        if (!uname_pattern.test(userid) || !upwd_pattern.test(pwd)) {
-          alert("Incorrect User id/ pwd");
+        if (!userid.test(userid) || !pwd.test(pwd)) {
+          alert("Incorrect User id/ pwd");  
         } else {
           alert("Welcome to RVCE");
           document.write(Date() + "   " + "Welcome" + userid);
           document.body.bgColor = "blue";
         }
       }
+      }
     </script>
-  </head>
-  <body>
     <div class="container mt-5">
       <div class="jumbotron mt-5">
         <h1 class="text-center">RVCE Admin Login</h1>
