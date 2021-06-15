@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <students>
-<heading> Students Information</heading>
        <student1>
            <heading> Student1 Info </heading>
            <usn>123456</usn>
